@@ -220,6 +220,8 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
     if stateManager.remainingIndices.isEmpty {
       delegate?.didSwipeAllCards?(self)
       return
+    } else if let topCardIndex = topCardIndex {
+      delegate?.cardStack?(self, didDisplayCardAt: topCardIndex)
     }
 
     isAnimating = true

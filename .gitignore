@@ -3,6 +3,9 @@
 
 # Xcode
 
+# AppCode
+.idea/
+
 ## User settings
 xcuserdata/
 
